@@ -1,4 +1,39 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 850px) {
     /*header*/
+    header{
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+    header .flex{
+        position: relative;
+        z-index: 2;
+        display: flex;
+        height: 70px;
+        flex-direction: row;
+        justify-content: space-between
+    }
+    header .logo{
+        color: var(--texto-white);
+        line-height: 70px;
+    }
+    .logo h2{
+        font-size: 40px;
+       display: inline-block;
+       font-weight: bold;
+    }
+    .logo p{
+        margin-left: -2px;
+        font-size: 15px;
+        font-weight: lighter;
+        display: inline-block;
+    }
+    nav.menu-desktop{
+        display: none;
+    }
+    nav.menu-mobile{
+        display: block;
+    }
+    /*fim header*/
     
 }
