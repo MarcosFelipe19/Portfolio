@@ -9,8 +9,7 @@ html, body{
     --amarelo-font-size: 15px;
     --amarelo-font-bold:500;
     --margin15: 15px; 
-    --overlay: #271445;
-    --overlay-header:#270059;
+    --margin-section: 50px;
 }
 .center{
     max-width: 1280px;
@@ -72,14 +71,13 @@ nav.menu-mobile{
     top: 0;
     right:0;
     width: 300px;
-    z-index: 4;
     height: 100vh;
-    padding: 0 5px;
-    background-color:  rgb(0, 255, 200);
-    border-radius: 30px 0 0 0;
+    background-color: black;
+    border-radius: 10px 0 0 0;
     text-align: center;
 }
 .header-mobile{
+    background-color:  var(--amarelo);
     text-align: right;
     display: flex;
     flex-direction: row;
@@ -87,6 +85,7 @@ nav.menu-mobile{
     justify-content: space-between;
     width: 100%;
     height: 100px;
+    border-radius: 10px 0 0 0;
 }
 .header-mobile div{
     width: 100%;
@@ -115,18 +114,17 @@ nav.menu-mobile{
 }
 .menu-mobile ul{
     width: 100%;
-    height: 100%;
-    margin-top: 20px;
+    height: 100%;   
 }
 .menu-mobile a{
     display: block;
     width: 100%;
     padding: 15px 0;
-    color: black;
+    color: var(--texto-white);
     font-size: 20px;
     text-decoration: none;
     font-weight: 400;
-    border-bottom: 1px solid #999 ;
+    background-color: black;
 }
 /*fim header*/
 
@@ -213,7 +211,6 @@ section.bg .conteudo-bg{
     color: var(--amarelo);
 }
 .conteudo-bg .introdution{
-    font-size: 1px;
     text-align: left;
     margin-left: 20px;
     width: 25%;
@@ -236,7 +233,7 @@ section.bg .conteudo-bg{
     font-size: 16px;
     font-weight: normal;
     letter-spacing: 1px;
-    line-height: 18px;
+    line-height: 23px;
     color: var(--texto-white);    
 }
 .introdution strong:nth-last-of-type(1){
@@ -249,4 +246,95 @@ section.bg .conteudo-bg{
     vertical-align: top;
     font-size: 12px;
 }
+h2.sub_titulo{
+    color: var(--subTitulo);
+    text-align: center;
+    font-weight: 500;
+    font-size: 35px;
 
+}
+/*portfolio*/
+section.trabalhos{
+    margin: var(--margin-section);
+}
+section.trabalhos aside{
+    padding-top: 30px;
+}
+section.trabalhos aside ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+section.trabalhos aside li{
+    width: 100%;
+    max-width: 100px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 25px;
+    border: solid 3px #ccc;
+    color: #ccc;
+}
+section.trabalhos .container-portfolio{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 40px;
+}
+section.trabalhos .caixa-item{
+    background-image: url('../assets/bg-image.jpg');
+    background-size: cover;
+    border: solid 1px;
+    min-height: 350px;
+    position: relative;
+    color: white;
+    box-shadow: 7px 7px 12px 2px  black;
+    cursor: pointer;
+}
+.caixa-item .overlay-item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 0;
+}
+section.trabalhos .conteudo-item{
+    padding: 10px 20px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+section.trabalhos .conteudo-item h3{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+section.trabalhos .conteudo-item p {
+    margin-top: 40px;   
+    line-height: 23px;
+    font-size: 17px;
+    font-weight: 400;
+}
+section.trabalhos .conteudo-item button{
+    width: 100px;
+    padding: 5px 0;
+    border-radius: 20px;
+    border: solid 2px white;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
