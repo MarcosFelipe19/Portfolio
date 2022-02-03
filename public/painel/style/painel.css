@@ -1,0 +1,167 @@
+*{
+    font-family: "Raleway";
+}
+body{
+    background-color: #E6E7E9;
+}
+.menu{
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition-duration: 0.5s;
+    transition-property: left;
+    transition-timing-function: ease-in-out;
+    background: #1D262D;
+    color: white;
+}
+div.logo{
+    width: 100%;
+    height: 130px;
+    background-color: #222D33;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+div.options aside ul{
+    list-style: none;
+}
+aside ul li{
+    padding: 15px 0;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 10px;
+    cursor: pointer;
+}
+aside ul .active{
+    color: orange;
+}
+aside .out{
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    background-color: #222D33;
+    cursor: pointer;
+}
+/*header painel*/
+div.body{
+    width: calc(100% - 300px);
+    position: relative;
+    left: 300px;
+    transition-duration: 0.5s;
+    transition-property: left  width;
+    transition-timing-function: ease-in-out;
+}
+div.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+div.header img{
+    width: 30px;
+    cursor: pointer;
+}
+div.header p{
+    color: #C4C6C7;
+    cursor: pointer;
+    font-size: 18px;
+}
+/*conteudo*/
+section#dashboard{
+    padding:30px;   
+}
+section#dashboard .flex{
+    display: flex;
+    float: left;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}
+main section .infos{
+    background-color: #fff;
+    width: 100%;
+    padding: 30px;
+}
+main section .info{
+    height: 200px;
+    position: relative;
+    border-radius: 20px;
+}
+main .infos h3{
+    font-size: 25px;
+    color: #555;
+}
+section#dashboard .info p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: orange;
+}
+main section{
+    padding: 30px;
+}
+main .fields{
+    margin-top:30px;
+    max-width: 700px;
+}
+.fields input, .fields textarea{
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #ccc;
+    color: black;
+    font-size: 16px;
+}
+.fields textarea{
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+.fields button{
+    width: 100px;
+    background-color: #1D262D;
+    color: white;
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+}
+.fields input:focus, .fields textarea:focus{
+    outline: none;
+}
+#editar .itemWork div.divContainer, section#settings .usuarios .container-usuarios-delete{
+    border-bottom: solid 2px #ccc;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.itemWork p{
+    width: 100%;
+    font-size: 17px;
+}
+.itemWork button, section#settings .usuarios button{
+    width: 70px;
+    margin-right: 20px;
+    padding: 5px;
+    color: white;
+    border: 0;
+    font-size: 16px;
+    width: 100%;
+}
+.deleteWork{
+    background-color: red;
+}
+.updateWork{
+    background-color: blue;
+}
+div.delete-usuario{
+    margin-top: 40px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Painel</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600&family=Raleway:wght@300;400;500&family=Righteous&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style/reset.css">
+    <style>
+        body{
+            background-color: #37855D;
+        }
+        form {
+            max-width: 500px;
+            width: 100%;
+            background: #303D36;
+            padding: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 8px 5px #222;
+            color: white;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: "Raleway";
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 25px;
+        }
+
+        div.input {
+            margin-top: 25px;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            font-size: 16px;
+            font-weight: 500px;
+            font-family: "Raleway";
+            color: #555;
+            padding: 10px;
+        }
+        input:focus{
+            outline: none;
+        }
+        button{
+            width:130px;
+            padding: 12px 0px;
+            color: white;
+            background-color: #3FC380;
+            font-family: "Raleway";
+            font-weight: bold;
+            border: 0;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 3px 1px #429268;
+        }
+        .message{
+            position: absolute;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .message p{
+            margin-top: 10px;
+            color: #3FC380;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-family: 'Raleway' 'sans-serif';
+        }
+    </style>
+    <script src="../js/acessIvalid.js"></script>
+</head>
+
+<body>
+    <form id="form-login"> 
+        <h2>User Login</h2>
+        <div class="input">
+            <input type="email" name="email" id="email" placeholder="Email" >
+        </div>
+        <!--div-input-->
+
+        <div class="input">
+            <input type="password" name="password" placeholder="Password">
+        </div>
+        <div class="message">
+            <p></p>
+        </div>
+        <div class="input">
+            <button onclick="login()">Sign in</button>
+        </div>
+    </form>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/interfaceLogin.js"></script>
+</body>
+</html>

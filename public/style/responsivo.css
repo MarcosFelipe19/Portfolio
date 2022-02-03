@@ -1,0 +1,169 @@
+@media screen and (max-width: 1100px) {
+    /*portfólio*/
+    section.trabalhos .container-portfolio{
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto ;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    /*header*/
+    nav.menu-desktop{
+        display: none;
+    }
+    .container-menu-mobile{
+        display: block;
+    }
+    /*fim header*/
+    
+    /*bg*/
+    section.bg{ 
+        height: 600px;
+    }
+
+    section.bg .conteudo-bg{
+        margin-top: 150px;
+    }
+    .conteudo-bg .interno-bg{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 300px;
+    }
+    .conteudo-bg .conteudo-apresentacao{
+        order: 2;
+        width: 45%;
+        margin-top: 20px;
+        margin-right: 0px;
+    }
+    .conteudo-bg div.titulo{
+        width: 100%;
+        order: 1;
+    }
+    .conteudo-bg .titulo h1{
+        font-size: 40px;
+        width: 100%;
+        border: solid 2px var(--amarelo);
+        color: var(--amarelo);
+    }
+    .conteudo-bg .introdution{
+        order: 3;
+        margin-top: 20px;
+        text-align: right;
+        margin-left: 20px;
+        width: 45%;
+    }
+    /*fim bg*/
+    /*portfólio*/
+    section.trabalhos .container-portfolio{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+} 
+@media screen and (max-width: 530px) {
+    section.bg{
+        background-image: url('../assets/bg-image2.jpg');
+        background-size: cover;
+        height: 600px;
+        text-align: center;
+        position: relative;
+    }
+    section.bg .overlay{
+        opacity: 0.7;
+    }
+    .conteudo-bg .conteudo-apresentacao{
+        text-align: left;
+        width: 15%;
+    }
+    .conteudo-apresentacao h2{
+        font-size: 30px;
+    }
+    .conteudo-apresentacao strong{
+        font-size: 13px;
+    }
+    .conteudo-bg .titulo h1{
+        font-size: 30px;
+    }
+    .conteudo-bg .introdution{ 
+        width: 60%;
+    }
+    .introdution strong{
+        color: var(--amarelo);
+        font-size: var(--amarelo-font-size);
+        text-transform: uppercase;
+        font-weight: var(--amarelo-font-bold);
+    }
+    .introdution h3{
+        font-size: 18px;
+    }
+    .introdution p{
+        font-size: 14px;
+    }
+    /*portfólio*/
+    section.trabalhos .container-portfolio{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+    }
+    section.trabalhos .caixa-item{
+        min-height: 250px;
+    }
+    section.trabalhos .conteudo-item{
+        padding: 0 5px;
+    }
+    section.trabalhos .conteudo-item p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    section.trabalhos .conteudo-item h3{
+        margin-top: 5px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 480px) {
+    h2.sub_titulo{
+        font-size: 20px;
+    }
+    /*portfólio*/
+    section.trabalhos aside ul{
+        gap: 2px;
+    }
+    section.trabalhos aside li{
+        font-size: 12px;
+        font-weight: normal;
+        height: 30px;
+        line-height: 30px;
+        border: solid 1px #ccc;
+    }
+    section.trabalhos .container-portfolio{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        gap: 20px;
+    } 
+    /*contato*/
+    section .descricao p{
+        font-size: 16px;
+    }
+    /*chamada*/
+    section.chamada h2{
+        font-size: 30px;
+    }
+    section.chamada p{
+        font-size: 16px;
+    }
+}
+
+@media screen and ( max-width: 325px ){
+    .conteudo-bg  .introdution p{
+        display: none;
+    }
+    section.trabalhos aside ul{
+        gap: 5px;
+    }
+    section.trabalhos aside li{
+        border: 0;
+        color: black;
+    }
+}

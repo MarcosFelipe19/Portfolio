@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600&family=Raleway:wght@300;400;500&family=Righteous&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="./style/painel.css">
+
+    <script src="./js/script.js"></script>
+    <script src="./js/interfacePainel.js"></script>
+    <script src="./js/accessPageAdmin.js"></script>
+    <script src="../js/acessIvalid.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="logo">
+            <img width="70" height="70" src="../assets/M.png">
+            <h2>Marcos <br>Felipe</h2>
+        </div>
+        <div class="options">
+            <aside>
+                <ul>
+                    <!-- <li class="active" attr='dashboard'>Dashboard</li> -->
+                    <li attr='cadastrar'>Cadastrar</li>
+                    <li attr='editar'>Editar</li>
+                    <li attr='settings'>Settings</li>
+                </ul>
+                <div attr='signOut' class="out" onclick="quit()">Sign out</div>
+            </aside>
+        </div>
+        <!--options-->
+    </div>
+    <!--menu-->
+
+    <div class="body">
+        <div class="header">
+            <div class="icone-hamburguer">
+                <img src="../assets/icons8--hamburguer.svg">
+            </div>
+            <div>
+                <p onclick="quit()">Dashboard</p>
+            </div>
+        </div>
+        <!--header-->
+
+        <main>
+            <!-- <section style="display: block;" id="dashboard">
+                <div class="flex">
+                    <div class="info infos">
+                        <h3>Visitas Hoje</h3>
+                        <p>5</p>
+                    </div>
+                    <!--info-->
+
+            <!-- <div class="info infos">
+                        <h3>Total visitas</h3>
+                        <p>5</p>
+                    </div>
+                    <!--info-->
+
+            <!-- <div class="info infos">
+                        <h3>Online agora</h3>
+                        <p>5</p>
+                    </div>
+                    <!--info-->
+            <!-- </div> -->
+            <!--flex-->
+            <!-- </section> -->
+
+            <section id="cadastrar">
+                <div class="infos">
+                    <form class="forms">
+                        <h3>Cadastrar Projeto</h3>
+                        <div class="fields">
+                            <input type="text" name="title" placeholder="Title">
+                        </div>
+
+                        <div class="fields">
+                            <textarea name="description" placeholder="description" rows="10" cols="20"></textarea>
+                        </div>
+
+                        <div class="fields">
+                            <input type="file" name="image" accept="image/png, image/jpeg, image/jpg">
+                        </div>
+
+                        <div class="fields">
+                            <input type="text" name="address" placeholder="address">
+                        </div>
+
+                        <div class="fields">
+                            <button onclick="cadastrar()">Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section style="display:none" id="editar">
+                <div class="infos">
+                    <h3>Editar</h3>
+                    <div class="itemWork">
+                        <!-- <div class="divContainer"> -->
+                            <!-- <p>nome do projeto</p> -->
+                        <!-- <div> -->
+                            <!-- <button class="deleteWork">delete</button> -->
+                            <!-- <button attr="update" class="updateWork">update</button> -->
+                        <!-- </div> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </section>
+
+            <section style="display: none" id="settings">
+                <div class="infos">
+                    <form class="forms">
+                        <h3>Cadastrar Usuário</h3>
+                        <div class="fields">
+                            <input type="text" name="name" placeholder="name">
+                        </div>
+
+                        <div class="fields">
+                            <input name="email" placeholder="email">
+                        </div>
+
+                        <div class="fields">
+                            <input type="password" name="password" placeholder="password">
+                        </div>
+
+                        <div class="fields">
+                            <button onclick="cadastrarUsuario()">Cadastrar</button>
+                        </div>
+                    </form>
+
+                    <div class="delete-usuario">
+                        <h3>Usuários Cadastrados</h3>
+                        <div class="usuarios">
+                            <!-- <div class="container-usuarios-delete">
+                                <p>nome do projeto</p>
+                                <p>email</p>
+                                <div>
+                                    <!-- <button class="deleteWork">delete</button> -->
+                                <!-- </div> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section style="display: none;" id="update">
+        <div class="infos">
+            <form class="forms">
+                <h3>Atualizar projeto</h3>
+                <div class="fields">
+                    <input type="text" name="title" placeholder="Title">
+                </div>
+
+                <div class="fields">
+                    <textarea name="description" placeholder="description" rows="10" cols="20"></textarea>
+                </div>
+
+                <div class="fields">
+                    <input type="file" name="image" accept="image/png, image/jpeg, image/jpg">
+                </div>
+
+                <div class="fields">
+                    <input type="text" name="address" placeholder="address">
+                </div>
+
+                <div class="fields">
+                    <button onclick="update()">Atualizar</button>
+                </div>
+            </form>
+        </div> -->
+            <!-- </section> -->
+
+        </main>
+    </div>
+</body>
+
+</html>
